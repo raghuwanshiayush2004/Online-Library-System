@@ -14,6 +14,11 @@ const BrowseBooks = () => {
     let filtered = books
 
     // Filter by category
+if (category && category !== 'all') {
+      filtered = filtered.filter(book => 
+        book.category.toLowerCase() === category.toLowerCase()
+      )
+    }
 
 
     // Filter by search term
