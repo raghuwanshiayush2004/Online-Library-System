@@ -74,8 +74,21 @@ const BookDetails = () => {
                 <span className="rating-value">({book.rating}/5)</span>
               </div>
             </div>
-
             {/* Book Stats Section */}
+            <div className="book-stats">
+              <div className="stat">
+                <span className="stat-value">{book.pages}</span>
+                <span className="stat-label">Pages</span>
+              </div>
+              <div className="stat">
+                <span className="stat-value">{book.year}</span>
+                <span className="stat-label">Year</span>
+              </div>
+              <div className="stat">
+                <span className="stat-value">{book.rating}/5</span>
+                <span className="stat-label">Rating</span>
+              </div>
+            </div>
 
             
             {/* Enhanced Description Section */}
