@@ -8,6 +8,17 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           {/* Hero Section */}
+          <section className="about-hero">
+            <div className="hero-content">
+              <h1>About Our Library</h1>
+              <p className="hero-subtitle">
+                Discover the story behind our passion for books and knowledge sharing
+              </p>
+            </div>
+            <div className="hero-graphic">
+              <span className="library-emoji">🏛️</span>
+            </div>
+          </section>
 
 
           {/* Mission Section */}
