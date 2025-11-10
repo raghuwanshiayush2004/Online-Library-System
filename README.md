@@ -59,7 +59,8 @@ A modern, responsive React-based online library system built with Vite. Browse, 
 │   └── index.css
 ├── package.json
 └── README.md
-``
+```
+
 ## 📋 Prerequisites
 
 Before running this project, make sure you have the following installed:
