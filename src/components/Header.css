@@ -88,13 +88,13 @@
     gap: 1rem;
     padding: 0 1rem;
   }
-  
+
   .nav {
     gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .nav a {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;

@@ -7,7 +7,7 @@ const BookDetails = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { books } = useSelector(state => state.books)
-  
+
   const book = books.find(b => b.id === parseInt(id))
 
   // Function to render stars
@@ -48,8 +48,8 @@ const BookDetails = () => {
         <div className="book-details-content">
           <div className="book-cover">
             <div className="book-cover-placeholder">
-              <img 
-                src={book.coverImage} 
+              <img
+                src={book.coverImage}
                 alt={`${book.title} cover`}
                 className="book-cover-large"
                 onError={(e) => {
@@ -62,11 +62,11 @@ const BookDetails = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="book-info">
             <h1 className="book-title">{book.title}</h1>
             <p className="book-author">by {book.author}</p>
-            
+
             <div className="book-meta">
               <span className="category-badge">{book.category}</span>
               <div className="rating">
@@ -90,7 +90,7 @@ const BookDetails = () => {
               </div>
             </div>
 
-            
+
             {/* Enhanced Description Section */}
             <div className="book-description">
               <div className="description-header">
@@ -119,11 +119,11 @@ const BookDetails = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="book-isbn">
               <strong>📋 ISBN:</strong> {book.isbn}
             </div>
-            
+
             <div className="action-buttons">
               <button onClick={() => navigate('/books/all')} className="back-btn">
                 ← Back to Browse

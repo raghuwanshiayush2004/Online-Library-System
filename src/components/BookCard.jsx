@@ -4,17 +4,17 @@ import './BookCard.css'
 
 const BookCard = ({ book }) => {
   // Function to truncate title to specific character length
-const truncateTitle = (title, maxLength = 45) => {
+  const truncateTitle = (title, maxLength = 45) => {
     if (title.length <= maxLength) return title
     return title.substring(0, maxLength) + '...'
   }
 
 
   // Function to render stars with better visual
-  	  const renderStars = (rating) => {
-	    const fullStars = Math.floor(rating)
-	    const hasHalfStar = rating % 1 >= 0.3
-	    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
+  const renderStars = (rating) => {
+    const fullStars = Math.floor(rating)
+    const hasHalfStar = rating % 1 >= 0.3
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
 
 
     return (
@@ -29,8 +29,8 @@ const truncateTitle = (title, maxLength = 45) => {
   return (
     <div className="book-card">
       <div className="book-image">
-        <img 
-          src={book.coverImage} 
+        <img
+          src={book.coverImage}
           alt={`${book.title} cover`}
           className="book-cover-img"
           onError={(e) => {
@@ -46,15 +46,15 @@ const truncateTitle = (title, maxLength = 45) => {
         <h3 className="book-title" title={book.title}>
           {truncateTitle(book.title)}
         </h3>
-        
+
         <p className="book-author" title={`by ${book.author}`}>
           {book.author}
         </p>
-        
+
         {/* FIXED: Category and Year with data attribute for specific styling */}
         <div className="book-meta">
-          <span 
-            className="book-category" 
+          <span
+            className="book-category"
             data-category={book.category}
             title={book.category}
           >
@@ -62,14 +62,14 @@ const truncateTitle = (title, maxLength = 45) => {
           </span>
           <span className="book-year">{book.year}</span>
         </div>
-        
+
         <div className="book-rating">
           <span className="stars">
             {renderStars(book.rating)}
           </span>
           <span className="rating-text">{book.rating}/5</span>
         </div>
-        
+
         <Link to={`/book/${book.id}`} className="view-details-btn">
           View Details
         </Link>

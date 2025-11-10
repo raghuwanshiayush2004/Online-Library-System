@@ -11,7 +11,7 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff" fill-opacity="0.05" points="0,1000 1000,0 1000,1000"/></svg>');
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff" fill-opacity="0.05" points="0,1000 1000,0 1000,1000"/></svg>');
   color: white;
   padding: 6rem 0;
   text-align: center;
@@ -31,8 +31,13 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  100% { transform: translateY(-100px) rotate(360deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
 }
 
 .hero h1 {
@@ -129,7 +134,7 @@
   text-align: center;
   text-decoration: none;
   color: #475569;
-  box-shadow: 
+  box-shadow:
     0 8px 25px rgba(0, 0, 0, 0.1),
     0 4px 6px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -167,7 +172,7 @@
 
 .category-card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 
+  box-shadow:
     0 25px 50px -12px rgba(0, 0, 0, 0.25),
     0 0 0 1px rgba(102, 126, 234, 0.1);
   color: #1e293b;
@@ -332,12 +337,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   .categories-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.2rem;
   }
-  
+
   .hero h1 {
     font-size: 3rem;
   }
@@ -347,42 +352,42 @@
   .hero {
     padding: 4rem 0;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero p {
     font-size: 1.1rem;
   }
-  
+
   .books-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .categories h2,
   .popular-books h2 {
     font-size: 2.2rem;
   }
-  
+
   .container {
     padding: 0 1.5rem;
   }
-  
+
   .categories-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1rem;
   }
-  
+
   .category-card {
     padding: 2rem 1rem;
   }
-  
+
   .category-icon {
     font-size: 3.2rem;
   }
-  
+
   .category-card h3 {
     font-size: 1.2rem;
   }
@@ -393,32 +398,32 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
-  
+
   .categories h2 {
     font-size: 2rem;
   }
-  
+
   .category-card {
     padding: 1.5rem 0.8rem;
   }
-  
+
   .category-icon {
     font-size: 2.8rem;
   }
-  
+
   .category-card h3 {
     font-size: 1.1rem;
   }
-  
+
   .hero h1 {
     font-size: 2.2rem;
   }
-  
+
   .cta-button {
     padding: 0.8rem 2rem;
     font-size: 1rem;
   }
-  
+
   .view-all-btn {
     padding: 0.8rem 2rem;
     font-size: 1rem;
@@ -430,15 +435,15 @@
   .categories-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .category-card {
     padding: 1.2rem 0.5rem;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .container {
     padding: 0 1rem;
   }

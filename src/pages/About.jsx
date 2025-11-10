@@ -29,8 +29,8 @@ const About = () => {
             </div>
             <div className="mission-content">
               <p className="mission-text">
-                We believe in the transformative power of books. Our mission is to create a 
-                digital sanctuary where book lovers can discover, share, and celebrate literature 
+                We believe in the transformative power of books. Our mission is to create a
+                digital sanctuary where book lovers can discover, share, and celebrate literature
                 from around the world. We're committed to making knowledge accessible to everyone.
               </p>
               <div className="mission-stats">
@@ -89,13 +89,13 @@ const About = () => {
             <div className="vision-content">
               <div className="vision-text">
                 <p>
-                  We envision a world where everyone has access to great literature and 
-                  the opportunity to discover new perspectives through books. Our platform 
-                  is built with love for the reading community, by people who understand 
+                  We envision a world where everyone has access to great literature and
+                  the opportunity to discover new perspectives through books. Our platform
+                  is built with love for the reading community, by people who understand
                   the magic of getting lost in a good book.
                 </p>
                 <p>
-                  From classic literature to contemporary bestsellers, we're constantly 
+                  From classic literature to contemporary bestsellers, we're constantly
                   expanding our collection to bring you the best reading experience possible.
                 </p>
               </div>

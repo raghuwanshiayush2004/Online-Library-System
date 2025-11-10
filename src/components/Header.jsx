@@ -18,20 +18,20 @@ const Header = () => {
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
             🏠 Home
           </Link>
-          <Link 
-            to="/books/all" 
+          <Link
+            to="/books/all"
             className={location.pathname.includes('/books') ? 'active' : ''}
           >
             📖 Browse Books
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className={location.pathname === '/about' ? 'active' : ''}
           >
             ℹ️ About
           </Link>
-          <Link 
-            to="/add-book" 
+          <Link
+            to="/add-book"
             className={location.pathname === '/add-book' ? 'active' : ''}
           >
             ➕ Add Book

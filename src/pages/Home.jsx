@@ -6,7 +6,7 @@ import './Home.css'
 
 const Home = () => {
   const { books, categories } = useSelector(state => state.books)
-  
+
   // Get popular books (first 6 books)
   const popularBooks = books.slice(0, 6)
 
@@ -46,7 +46,7 @@ const Home = () => {
           <h2>Book Categories</h2>
           <div className="categories-grid">
             {categories.map(category => (
-              <Link 
+              <Link
                 key={category}
                 to={`/books/${category.toLowerCase()}`}
                 className="category-card"

@@ -14,8 +14,8 @@ const BrowseBooks = () => {
     let filtered = books
 
     // Filter by category
-if (category && category !== 'all') {
-      filtered = filtered.filter(book => 
+    if (category && category !== 'all') {
+      filtered = filtered.filter(book =>
         book.category.toLowerCase() === category.toLowerCase()
       )
     }
@@ -62,10 +62,10 @@ if (category && category !== 'all') {
           <h1>
             <span className="browse-header-text">
               {getDisplayCategory(category || 'all')}
-              </span>
-              <span className="book-count">({filteredBooks.length} books)</span>
-              </h1>
-          
+            </span>
+            <span className="book-count">({filteredBooks.length} books)</span>
+          </h1>
+
           <div className="search-bar">
             <input
               type="text"
@@ -78,15 +78,15 @@ if (category && category !== 'all') {
         </div>
 
         <div className="categories-nav">
-          <Link 
-            to="/books/all" 
+          <Link
+            to="/books/all"
             className={`category-link ${category === 'all' ? 'active' : ''}`}
           >
             <span className="category-icon">{getCategoryIcon('all')}</span>
             All Books
           </Link>
           {categories.map(cat => (
-            <Link 
+            <Link
               key={cat}
               to={`/books/${cat.toLowerCase()}`}
               className={`category-link ${category === cat.toLowerCase() ? 'active' : ''}`}

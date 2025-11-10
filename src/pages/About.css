@@ -308,23 +308,24 @@
     text-align: center;
     gap: 2rem;
   }
-  
+
   .hero-content h1 {
     font-size: 2.8rem;
   }
-  
+
   .vision-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
+
   .about-hero,
   .mission-section,
   .features-section,
@@ -333,33 +334,33 @@
     padding: 2rem 1.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .hero-content h1 {
     font-size: 2.2rem;
   }
-  
+
   .section-header h2 {
     font-size: 2rem;
   }
-  
+
   .mission-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .stat-card {
     padding: 1.5rem 1rem;
   }
-  
+
   .stat-number {
     font-size: 2rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-btn {
     width: 100%;
     max-width: 300px;
@@ -371,19 +372,19 @@
   .about {
     padding: 1rem 0;
   }
-  
+
   .library-emoji {
     font-size: 5rem;
   }
-  
+
   .vision-emoji {
     font-size: 4rem;
   }
-  
+
   .feature-card {
     padding: 2rem 1rem;
   }
-  
+
   .feature-icon {
     font-size: 2.5rem;
   }
