@@ -74,7 +74,7 @@ Before running this project, make sure you have the following installed:
 ### Step 1: Clone the Repository
 ```bash
 git clone <your-repository-url>
-cd library-system
+cd Online Library System
 ```
 ## Install Dependencies
 npm install
