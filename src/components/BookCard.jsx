@@ -11,6 +11,10 @@ const truncateTitle = (title, maxLength = 45) => {
 
 
   // Function to render stars with better visual
+  	  const renderStars = (rating) => {
+	    const fullStars = Math.floor(rating)
+	    const hasHalfStar = rating % 1 >= 0.3
+	    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
 
 
     return (
