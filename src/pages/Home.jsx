@@ -13,13 +13,13 @@ const Home = () => {
   // Function to get category icon
   const getCategoryIcon = (category) => {
     const icons = {
-      'Fiction': '',
-      'Non-Fiction': '',
-      'Sci-Fi': '',
-      'Fantasy': '',
-      'Mystery': '',
-      'Biography': '',
-      'Horror': ''
+      'Fiction': '📚',
+      'Non-Fiction': '📖',
+      'Sci-Fi': '🚀',
+      'Fantasy': '🐉',
+      'Mystery': '🕵️',
+      'Biography': '👤',
+      'Horror': '👻'
     }
     return icons[category] || '📁'
   }
