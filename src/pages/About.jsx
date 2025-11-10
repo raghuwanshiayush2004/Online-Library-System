@@ -1,0 +1,100 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './About.css'
+
+const About = () => {
+  return (
+    <div className="about">
+      <div className="container">
+        <div className="about-content">
+          {/* Hero Section */}
+
+
+          {/* Mission Section */}
+          <section className="mission-section">
+            <div className="section-header">
+              <h2>Our Mission</h2>
+              <div className="section-divider"></div>
+            </div>
+            <div className="mission-content">
+              <p className="mission-text">
+                We believe in the transformative power of books. Our mission is to create a 
+                digital sanctuary where book lovers can discover, share, and celebrate literature 
+                from around the world. We're committed to making knowledge accessible to everyone.
+              </p>
+              <div className="mission-stats">
+                <div className="stat-card">
+                  <span className="stat-number">15+</span>
+                  <span className="stat-label">Books Available</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-number">5+</span>
+                  <span className="stat-label">Categories</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-number">24/7</span>
+                  <span className="stat-label">Access</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Features Section */}
+          <section className="features-section">
+            <div className="section-header">
+              <h2>Why Choose Our Library?</h2>
+              <div className="section-divider"></div>
+            </div>
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="feature-icon">🔍</div>
+                <h3>Easy Discovery</h3>
+                <p>Find your next favorite book with our advanced search and filtering system</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Access our library from any device, anywhere, anytime</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">⭐</div>
+                <h3>Community Rated</h3>
+                <p>Discover books loved by our community with authentic ratings and reviews</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🆓</div>
+                <h3>Completely Free</h3>
+                <p>No subscription fees, no hidden costs - just pure book love</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Team Section */}
+          <section className="team-section">
+            <div className="section-header">
+              <h2>Our Vision</h2>
+              <div className="section-divider"></div>
+            </div>
+            <div className="vision-content">
+              <div className="vision-text">
+                <p>
+                  We envision a world where everyone has access to great literature and 
+                  the opportunity to discover new perspectives through books. Our platform 
+                  is built with love for the reading community, by people who understand 
+                  the magic of getting lost in a good book.
+                </p>
+                <p>
+                  From classic literature to contemporary bestsellers, we're constantly 
+                  expanding our collection to bring you the best reading experience possible.
+                </p>
+              </div>
+              <div className="vision-graphic">
+                <span className="vision-emoji">🌟</span>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+
+
+export default About
