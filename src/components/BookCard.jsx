@@ -4,6 +4,10 @@ import './BookCard.css'
 
 const BookCard = ({ book }) => {
   // Function to truncate title to specific character length
+const truncateTitle = (title, maxLength = 45) => {
+    if (title.length <= maxLength) return title
+    return title.substring(0, maxLength) + '...'
+  }
 
 
   // Function to render stars with better visual
