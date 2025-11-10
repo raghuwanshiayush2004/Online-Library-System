@@ -35,9 +35,10 @@ A modern, responsive React-based online library system built with Vite. Browse, 
 - **Styling**: Custom CSS with CSS Variables
 - **Icons**: Emoji icons for better visual appeal
 
-  ## 📁 Project Structure
-  ```
-  Online-Library-System/
+  # Project Structure
+
+```
+Online-Library-System/
 ├── public/
 │   └── vite.svg
 ├── src/
