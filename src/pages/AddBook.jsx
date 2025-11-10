@@ -60,6 +60,13 @@ const AddBook = () => {
     }))
     
     // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ''
+      }))
+    }
+  }
 
 
   return (
