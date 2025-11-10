@@ -106,6 +106,25 @@ const About = () => {
           </section>
 
           {/* CTA Section */}
+          <section className="cta-section">
+            <div className="cta-content">
+              <h2>Ready to Explore?</h2>
+              <p>Join thousands of readers in discovering amazing books</p>
+              <div className="cta-buttons">
+                <Link to="/books/all" className="cta-btn primary">
+                  Browse Books
+                </Link>
+                <Link to="/add-book" className="cta-btn secondary">
+                  Add a Book
+                </Link>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 
 export default About
